@@ -1,0 +1,350 @@
+
+penssh-server
+    2  ssh
+    3  sshd
+    4  systemctl start sshd
+    5  systemctl status sshd
+    6  systemctl enable sshd
+    7  history
+    8  ssh root@10.8.115
+    9  ssh root@10.69.8.115
+   10  ssh root@10.69.8.101
+   11  ssh-copy-id root@10.69.8.115
+   12  ssh-copy-id
+   13  ssh-copy-id -f root@10.69.8.115
+   14  ssh-keygen
+   15  ssh-copy-id -f root@10.69.8.115
+   16  ll
+   17  ls -a
+   18  pwd
+   19  cd /root
+   20  ls -a
+   21  cd .ssh
+   22  ll
+   23  more id_rsa
+   24  ssh-copy-id root@10.69.8.115
+   25  ssh 'root@10.69.8.115'
+   26  ll
+   27  rm id_rsa
+   28  pwd
+   29  cd ..
+   30  pwd
+   31  ssh-keygen
+   32  ssh-copy-id root@10.69.8.115
+   33  opconfig
+   34  ifconfig
+   35  pwd
+   36  ssh-copy-id root@10.69.8.115
+   37  ifconfig
+   38  pwd
+   39  ssh-copy-id root@10.69.8.101
+   40  ifconfig
+   41  pwd
+   42  ls -a
+   43  cd .ssh
+   44  ll
+   45  rm *
+   46  ll
+   47  exit
+   48  sudo vi /etc/hostname
+   49  sudo vi /etc/hosts
+   50  sudo reboot
+   51  ansible -m ping all
+   52  pwd
+   53  cd /root/
+   54  ls -a
+   55  cd .ssh/
+   56  ll
+   57  ls
+   58  more known_hosts 
+   59  ssh-copy-id root@10.69.8.115
+   60  ls
+   61  more known_hosts 
+   62  ansible -m ping all
+   63  exit
+   64  ansible -m ping all
+   65  pwd
+   66  ansible -m ping all
+   67  ll
+   68  ls -a
+   69  cd .ssh/
+   70  ls
+   71  more known_hosts 
+   72  ansible -m ping all
+   73  cd /etc/ansible
+   74  ansible -m ping all
+   75  ls
+   76  vi hosts 
+   77  ls
+   78  cd /root/
+   79  ls -a
+   80  cd .ssh/
+   81  ansible -m ping all
+   82  ls
+   83  cd
+   84  history 
+   85  history | grep ssh
+   86  ssh root@10.69.8.101
+   87  ansible -m ping all
+   88  ssh-copy-id root@10.69.8.115
+   89  ls
+   90  cd /root/
+   91  ls -a
+   92  rmdir .ssh
+   93  rm -r .ssh/
+   94  ssh-keygen
+   95  ssh-copy-id root@10.69.8.115
+   96  ssh-copy-id root@10.69.8.101
+   97  ssh root@10.69.8.115
+   98  ssh root@10.69.8.101
+   99  cd /etc/ansible/
+  100  vi hosts
+  101  ansible -m ping all
+  102  ansible -m shell -a 'ls' webservers
+  103  ansible -m shell -a 'free -m' webservers
+  104  cd /etc/ansible/
+  105  more hosts 
+  106  ansible -m shell -a 'ifconfig' webservers
+  107  ansible -m shell -a 'ifconfig' all
+  108  ansible -m shell -a 'ifconfig' dbservers
+  109  cd /etc/ansible/
+  110  more hosts
+  111  cd /etc/ansible/
+  112  vi hosts 
+  113  ansible -m shell -a 'ifconfig' dbservers
+  114  history
+  115  exit
+  116  pwd
+  117  ./firefox/
+  118  cd firefox/
+  119  cd ..
+  120  ls
+  121  ll
+  122  chmod 777 firefox
+  123  cd firefox/
+  124  ls
+  125  ./firefox
+  126  exit
+  127  ssh-copy-id root@10.69.8.147
+  128  ssh root@10.69.8.147
+  129  cd /root/
+  130  ls -a
+  131  cd .ssh/
+  132  ls
+  133  more known_hosts 
+  134  ssh root@10.69.8.147
+  135  history | grep ping
+  136  ansible -m ping all
+  137  ls
+  138  ansible -m ping all
+  139  cd /etc/ansible/
+  140  ls
+  141  vi hosts 
+  142  ansible -m ping all
+  143  cd /root/
+  144  ls
+  145  ls -a
+  146  rm -rf .ssh/
+  147  ls -a
+  148  ssh-keygen
+  149  ssh-copy-id root@10.69.8.115
+  150  ssh-copy-id root@10.69.8.101
+  151  ssh-copy-id root@10.69.8.147
+  152  ssh root@10.69.8.147
+  153  history
+  154  ansible -m ping webservers
+  155  cd /etc/ansible/
+  156  ls
+  157  hosts
+  158  vi hosts
+  159  ansible -m ping webservers
+  160  ssh root@10.69.8.115
+  161  cd /root
+  162  ls
+  163  ls -a
+  164  ls
+  165  cd .ssh/
+  166  ls
+  167  more known_hosts 
+  168  ssh-copy-id root@10.69.8.115
+  169  ssh root@10.69.8.115
+  170  ansible -m ping webservers
+  171  cd /root
+  172  mkdir playbooks
+  173  cd playbooks/
+  174  vi httpd.yaml
+  175  ls
+  176  ansible-playbook httpd.yml
+  177  ls
+  178  ansible-playbook httpd.yaml
+  179  vi httpd.yaml 
+  180  ansible-playbook httpd.yaml
+  181  vi httpd.yaml 
+  182  cd /etc/ansible/
+  183  vi hosts 
+  184  vi httpd.yaml 
+  185  ls
+  186  rm httpd.yaml 
+  187  cd /root/playbooks/
+  188  ls
+  189  vi httpd.yaml 
+  190  ansible-playbook httpd.yml
+  191  ansible-playbook httpd.yaml
+  192  vi httpd.yaml 
+  193  ansible-playbook httpd.yaml
+  194  ls
+  195  ansible webservers -m shell -a 'ls'
+  196  ansible webservers -m shell -a 'ls /var'
+  197  ls
+  198  vi index.html
+  199  pwd
+  200   ansible webservers -m copy -a "src=  dest="
+  201  ansible webservers -m copy -a "src=/root/playbooks/httpd.yaml dest=/var/www/html"
+  202  ls
+  203  vi index.html 
+  204  ansible webservers -m copy -a "src=/root/playbooks/index.html dest=/var/www/html"
+  205  ansible webservers -m shell: /bin/rm -rf /chemin/vers/le/repertoire/*
+  206  ansible webservers -m rm  -a "src=/root/playbooks/httpd.yaml dest=/var/www/html"
+  207  ansible webservers -m shell -a 'rm /var/www/html/httpd.yaml'
+  208  cd /etc/ansible/
+  209  ls
+  210  vi hosts 
+  211   ansible -m ping web-server
+  212  vi hosts 
+  213   ansible -m ping db-server
+  214  vi hosts 
+  215   ansible -m ping dbs
+  216  vi hosts 
+  217   ansible -m ping dbs
+  218  ssh-copy-id root@10.69.8.101
+  219  ssh root@10.69.8.101
+  220   ansible -m ping dbs
+  221  ls
+  222  cd ~
+  223  ls
+  224  cd playbooks/
+  225  ls
+  226  vi httpd.yaml 
+  227  gedit httpd.yaml 
+  228  ll
+  229  cd ..
+  230  ls
+  231  pwd
+  232  git clone https://github.com/arocki7/ansible-centos7-lamp.git
+  233  ls
+  234  cd ansible-centos7-lamp/
+  235  ls
+  236  vi hosts 
+  237  cd /etc/ansible/
+  238  ls
+  239  vi hosts 
+  240  cd ~
+  241  ls
+  242  cd ansible-centos7-lamp/
+  243  ls
+  244  cd group_vars/
+  245  ls
+  246  cd ..
+  247  ls
+  248  cd roles/
+  249  ls
+  250  cd db/
+  251  ls
+  252  cd tasks/
+  253  ls
+  254  vi main.yml 
+
+
+ansible -m ping all
+   62  ansible -m ping all
+   64  ansible -m ping all
+   66  ansible -m ping all
+   72  ansible -m ping all
+   73  cd /etc/ansible
+   74  ansible -m ping all
+   81  ansible -m ping all
+   87  ansible -m ping all
+   99  cd /etc/ansible/
+  101  ansible -m ping all
+  102  ansible -m shell -a 'ls' webservers
+  103  ansible -m shell -a 'free -m' webservers
+  104  cd /etc/ansible/
+  106  ansible -m shell -a 'ifconfig' webservers
+  107  ansible -m shell -a 'ifconfig' all
+  108  ansible -m shell -a 'ifconfig' dbservers
+  109  cd /etc/ansible/
+  111  cd /etc/ansible/
+  113  ansible -m shell -a 'ifconfig' dbservers
+  136  ansible -m ping all
+  138  ansible -m ping all
+  139  cd /etc/ansible/
+  142  ansible -m ping all
+  154  ansible -m ping webservers
+  155  cd /etc/ansible/
+  159  ansible -m ping webservers
+  170  ansible -m ping webservers
+  176  ansible-playbook httpd.yml
+  178  ansible-playbook httpd.yaml
+  180  ansible-playbook httpd.yaml
+  182  cd /etc/ansible/
+  190  ansible-playbook httpd.yml
+  191  ansible-playbook httpd.yaml
+  193  ansible-playbook httpd.yaml
+  195  ansible webservers -m shell -a 'ls'
+  196  ansible webservers -m shell -a 'ls /var'
+  200   ansible webservers -m copy -a "src=  dest="
+  201  ansible webservers -m copy -a "src=/root/playbooks/httpd.yaml dest=/var/www/html"
+  204  ansible webservers -m copy -a "src=/root/playbooks/index.html dest=/var/www/html"
+  205  ansible webservers -m shell: /bin/rm -rf /chemin/vers/le/repertoire/*
+  206  ansible webservers -m rm  -a "src=/root/playbooks/httpd.yaml dest=/var/www/html"
+  207  ansible webservers -m shell -a 'rm /var/www/html/httpd.yaml'
+  208  cd /etc/ansible/
+  211   ansible -m ping web-server
+  213   ansible -m ping db-server
+  215   ansible -m ping dbs
+  217   ansible -m ping dbs
+  220   ansible -m ping dbs
+  232  git clone https://github.com/arocki7/ansible-centos7-lamp.git
+  234  cd ansible-centos7-lamp/
+  237  cd /etc/ansible/
+  242  cd ansible-centos7-lamp/
+  308  cd ansible-centos7-lamp/
+  311  cd /etc/ansible/
+  316  cd ansible-centos7-lamp/
+  346  cd ansible-centos7-lamp/
+  348  ansible-playbook -i site.yml 
+  350  ansible-playbook -i hosts site.yml 
+  351  cd /etc/ansible/
+  353  vi ansible.cfg 
+  355  ansible -m ping 10.69.8.147
+  356  ansible -m ping 10.69.8.101
+  358  ansible webservers -m ping
+  359  ansible dbs -m ping
+  360  ansible 10.69.8.101 -m ping
+  361  cd /etc/ansible/
+  363  ansible 10.69.8.101 -m ping
+  364  ansible 10.69.8.115 -m ping
+  365  ansible webs-principal -m ping
+  369  cd ansible-centos7-lamp/
+  372  ansible-playbook -i hosts site.yml 
+  380  ansible-playbook -i hosts site.yml 
+  381  cd ~/ansible-centos7-lamp/
+  383  ansible-playbook -i hosts site.yml 
+  393  cd ansible-centos7-lamp/
+  400  ansible webservers -m copy -a "src=/root/playbooks/index.html dest=/var/www/html"
+  401  ansible webservers -m copy -a "src=/root/ansible-centos7-lamp/php/* dest=/var/www/html"
+  404  cd ansible-centos7-lamp/
+  405  ansible webservers -m copy -a "src=/root/ansible-centos7-lamp/php/* dest=/var/www/html"
+  408  ansible webservers -m copy -a "src=/root/ansible-centos7-lamp/php/* dest=/var/www/html"
+  409  ansible webservers -m copy -a "src=/root/ansible-centos7-lamp/php/index.php dest=/var/www/html"
+  410  ansible webservers -m copy -a "src=/root/ansible-centos7-lamp/php/ajouter.html dest=/var/www/html"
+  411  ansible webservers -m copy -a "src=/root/ansible-centos7-lamp/php/insert.php dest=/var/www/html"
+  412  ansible dbservers -m copy -a "src=/root/ansible-centos7-lamp/php/stag.sql dest=/root/db"
+  413  ansible dbservers -m copy -a "src=/root/ansible-centos7-lamp/php/stage.sql dest=/root/db"
+  416  ansible -m ping dbs
+  417  ansible dbservers -m copy -a "src=/root/ansible-centos7-lamp/php/stage.sql dest=/root/db"
+  418  ansible dbservers -m copy -a "src=/root/ansible-centos7-lamp/php/stage.sql dest=ansible -m ping dbs"
+  419  ansible dbservers -m copy -a "src=/root/ansible-centos7-lamp/php/stage.sql dest=/home/bzeitouni/db"
+  442  cd ansible-centos7-lamp/
+  446  history | grep ansible
+
